@@ -7,7 +7,7 @@ else {
      console.log("To numbers are not equal.");
 }
 
-//check number is even or odd
+//check number is even or odd?
 let c=12;
 if(c%2==0){
     console.log('The number is even.');

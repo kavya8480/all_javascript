@@ -1,3 +1,4 @@
+//reverse num
 let n=1234,r=0;
 while(n>0){
     r=r+(n%10);

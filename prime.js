@@ -1,3 +1,4 @@
+//prime num
 let n=1,a=0,i;
 for(i=2;i<=n-1;i++){
     if(n%i==0){

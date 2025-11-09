@@ -1,3 +1,4 @@
+//percentage
 let m=30,e=40,p=45,c=50,b=85,total,percent;
 total=m+e+p+c+b;
 percent=(total/500)*100;
