@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first" style="width: 50%; height: 50vh; background-color: red; border: 2px solid black; margin-bottom: 20px;"></div>
+    <button onclick="add(event)">In</button>
+    <button onclick="remove()">Out</button>
+
+    <script>
+
+        function add(event) {
+
+            console.log('Event is ', event);
+            let first = document.getElementById("first")
+            first.addEventListener("mouseover", clicked)
+            first.addEventListener("mouseout", clickedout)
+        }
+        function remove() {
+            let first = document.getElementById("first")
+            first.removeEventListener("mouseover", clicked)
+            first.removeEventListener("mouseout", clickedout)
+        }
+
+        function clicked() {
+          let first = document.getElementById("first")  
+            first.style.backgroundColor = "green"
+        }
+        function clickedout() {
+          let first = document.getElementById("first")  
+            first.style.backgroundColor = "red"
+        }
+    </script>
+</body>
+</html>
