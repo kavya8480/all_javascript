@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .huluu { color: blue; }
+        .color { color: red; }
+        .lt { text-decoration: line-through; }
+        #abcd {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+   <h1 id="hey">Hello</h1>
+
+    <p>This is a paragraph</p>
+
+    <a href="#">Go to link</a>
+
+    <img src="" alt="image" width="200">
+
+    <div>
+        <h3>Item 1</h3>
+        <h3>Item 2</h3>
+        <h3>Item 3</h3>
+    </div>
+
+    <input type="text" placeholder="Type something">
+
+    <br><br>
+
+    <select>
+        <option value="Mobile">Mobile</option>
+        <option value="Laptop">Laptop</option>
+        <option value="Tablet">Tablet</option>
+    </select>
+
+    <p id="device"></p>
+
+    <br>
+
+    <button id="btn">Upload File</button>
+    <input type="file" id="fileinp" style="display:none">
+
+    <br><br>
+
+    <div id="abcd"></div>
+
+    <nav id="nav">Click Navbar</nav>
+
+    <ul>
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+
+    <script>
+        // let hey = document.getElementById("hey");
+//changes html text
+// hey.innerText = "kavya das";     // text badal na 
+// hey.textContent = "hello kavya";
+// hey.innerHTML.toUpperCase();
+// hey.innerHTML = "kavya ji kese ho";   // element ke nader html dalna ho to  
+
+//  let a = document.querySelector("a");
+//  a.href =  "https://www.google.com";
+
+//getattribute syntax - element.getAttribute(name)
+//    console.log(a.getAttribute("href"));
+
+//removeattribute syntax - element.removeAttribute(name)
+//  a.removeAttribute("href");
+
+// setattribute syntax - element.setAttribute(name,value)
+// a.setAttribute("href", "https://www.google.com") ;
+
+// let img = document.querySelector("img");
+// img.setAttribute("src","https://plus.unsplash.com/premium_photo-1711217237364-827b31b57e92?q=80&w=884&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+
+//Dynamic DOM manipulation
+// let h1 = document.createElement("h1");
+//   h1.textContent = "hello kavya";
+//   console.dir(h1);
+// document.body.append(h1);
+// document.body.prepend(h1); 
+// document.querySelector("body").prepend(h1);
+// h1.remove();
+
+// let h1 = document.createElement("h1");
+//     h1.textContent = "hey main bahar se aayaa hu";
+//     document.querySelector("div").append(h1);
+
+// let h1 = document.querySelector("h1");
+// // console.dir(div);
+// div.style.color = " yellow";
+// div.style.font = "Gilroy";
+
+// h1.classList.add("huluu"); 
+// h1.classList.remove("huluu");
+// h1.classList.toggle("huluu");
+
+/* let h3 = document.querySelectorAll("div h3");
+    h3.forEach(function(element,index){
+        if(index ===0 || index === h3.length-1){
+            element.classList.add("color");
+ }
+    }); */
+
+//EVENTS
+// let h1 = document.querySelector("h1");
+// h1.addEventListener("click",function(){
+//     h1.style.color ="red";
+// })
+// Select the paragraph first
+
+// let p = document.querySelector("p");
+// function mousedown(){
+//     p.style.color = "green"; }
+// p.addEventListener("dblclick",dblclick)
+// p.removeEventListener("dblclick",dblclick) 
+// p.addEventListener("mousedown ",mousedown)
+
+//element.addEventListener("event name", function(){})
+
+// let input = document.querySelector("input")
+// input.addEventListener("input",function (evt){
+//     if(evt.data !== null){
+//         console.log(evt.data); }
+//     });
+
+// let sel = document.querySelector("select");
+// let device = document.querySelector("#device");
+
+// sel.addEventListener("change", function(dets){
+//     // device.textContent = "device selected"
+//     device.textContent =  `${dets.target.value} device selected`
+//     // console.log(dets.target.value)
+// })
+
+// let h1 = document.querySelector("h1");
+
+// window.addEventListener("keydown",function(dets){
+//     if(dets.key === " "){
+//        h1.textContent = "spc" 
+//     }
+//     else {
+//         h1.textContent = dets.key;
+//     }
+//     // console.log(dets.key);
+// })
+
+
+// let btn = document.querySelector("#btn");
+// let fileinp = document.querySelector("#fileinp");
+// btn.addEventListener("click",function(){
+//  fileinp.click();
+// });
+// fileinp.addEventListener("change", function(dets){
+//     const file = dets.target.files[0];
+//     if(file){
+//         btn.textContent = file.name;
+//         // btn.textContent = dets.target.files[0].name;
+//     }
+//     // console.log(dets.target.files[0].name);
+// })
+
+    
+// let abcd = document.querySelector("#abcd");
+// abcd.addEventListener("mouseover", function(){
+//     abcd.style.backgroundColor = "yellow";
+// });
+
+// abcd.addEventListener("mouseout", function(){
+//     abcd.style.backgroundColor = "crimson";
+// });
+// window.addEventListener("mousemove", function(dets){
+//     // console.log(dets);
+//     // console.log(dets.clientX,dets.clientY);
+//     abcd.style.top = dets.clientY + "px";
+//     abcd.style.left = dets.clientX + "px";
+// });
+
+// let abcd = document.querySelector(".abcd");
+// abcd.addEventListener("click",function(dets){})    
+
+// let nav = document.querySelector("#nav");
+// nav.addEventListener("click", function(){
+//     alert("clicked"); })
+
+    
+// let ul = document.querySelector("ul");
+// ul.addEventListener("click",function(dets){
+//     // console.log(dets.target.innerHTML);
+// //   dets.target.style.textDecoration = "line-through";
+// dets.target.classList.toggle("lt");  })
+
+         //setTimeout and setTimeInterval
+/* let timer = setTimeout(function(){
+    console.log("hello")
+ },5000); 
+   clearTimeout(timer); */
+
+/*  let timerset = setInterval(function(){
+    console.log("hello")
+ },5000);  
+clearInterval(timerset); */
+
+ /* let count = 10;
+let settimer = setInterval(function(){
+    if(count >= 0 ){
+        console.log(count);
+    count--;
+    }
+    else{
+      clearInterval(settimer);
+    }
+},1000); */
+    </script>
+</body>
+</html>
